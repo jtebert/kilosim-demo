@@ -4,10 +4,10 @@
 #include <math.h>
 #include <iomanip>
 #include <sstream>
-#include <World.h>
-#include <ConfigParser.h>
-#include <Viewer.h>
-#include <Logger.h>
+#include <kilosim/World.h>
+#include <kilosim/ConfigParser.h>
+#include <kilosim/Viewer.h>
+#include <kilosim/Logger.h>
 
 // AGGREGATORS
 

@@ -6,7 +6,7 @@
  * Created 2018-12 by Julia Ebert
  */
 
-#include <Kilobot.h>
+#include <kilosim/Kilobot.h>
 #include "incbeta.h"
 
 // Pseudo-booleans for convenience

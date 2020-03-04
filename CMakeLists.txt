@@ -6,10 +6,11 @@
 
 cmake_minimum_required (VERSION 3.9)
 
-project(project_name LANGUAGES CXX)
+project(kilosim_demo LANGUAGES CXX)
 
+# Change this to the path of your local installation of Kilosim
 add_subdirectory(/home/jtebert/google-drive/Harvard/SSR/kilobots/kilosim-richard-make build)
 
-add_executable(project_name src/BayesBot.cpp)
-target_link_libraries(project_name PRIVATE kilosim)
+add_executable(kilosim_demo src/BayesBot.cpp)
+target_link_libraries(kilosim_demo PRIVATE kilosim)
 
