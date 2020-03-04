@@ -1,0 +1,24 @@
+{
+    "compare_param": "use_positive_feedback",
+    "world_width": 2400,
+    "world_height": 2400,
+    "num_robots": 100,
+    "light_img_src": "../shapes/",
+    "trial_duration": 900,
+    "log_dir": "test-data/",
+    "log_filename_base": "test-",
+    "log_freq": 5,
+    "num_trials": 4,
+    "start_trial": 1,
+    "credible_thresh": 0.9,
+    "allow_simultaneity": 1,
+    "observe_step_time": 45,
+    "use_positive_feedback": [
+        1
+    ],
+    "both_prior": 10,
+    "seed_base": 999999999,
+    "fill_ratios": [
+        0.7
+    ]
+}
