@@ -1,20 +1,25 @@
 # Compile your code with:
 # mkdir build
 # cd build
-# cmake ..
+# cmake -DCMAKE_BUILD_TYPE=Release ..
 # make
 
 cmake_minimum_required (VERSION 3.9)
 
 project(kilosim_demo LANGUAGES CXX C)
 
-# Change this to the path of your local installation of Kilosim
-add_subdirectory(/home/jtebert/google-drive/Harvard/SSR/kilobots/kilosim-richard-make build)
+# Identify the location of the kilosim library
+add_subdirectory(submodules/kilosim)
 
-file(GLOB_RECURSE SOURCES RELATIVE ${PROJECT_SOURCE_DIR} "src/*.cpp")
-file(GLOB_RECURSE HEADERS RELATIVE ${PROJECT_SOURCE_DIR} "src/*.h")
-file(GLOB_RECURSE CFILES RELATIVE ${PROJECT_SOURCE_DIR} "src/*.c")
+# Directory containing header files
+include_directories(src)
 
-add_executable(kilosim_demo ${HEADERS} ${SOURCES} ${CFILES})
-# add_executable(kilosim_demo src/main.cpp)
+# Be sure to list all source files
+add_executable(kilosim_demo
+  src/BayesBot.cpp
+  src/incbeta.c
+  src/main.cpp
+)
+
+# Link the kilosim library
 target_link_libraries(kilosim_demo PRIVATE kilosim)

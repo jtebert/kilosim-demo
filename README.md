@@ -1,16 +1,25 @@
 # Kilosim Demo
 
-## Install
+## Add kilosim to your project
 
-In `CMakeLists.txt`, set the path to your locally installed [Kilosim](https://github.com/jtebert/kilosim).
-
+```bash
+mkdir submodules
+cd submodules
+git submodule add https://github.com/jtebert/kilosim
 ```
+
+## Compile your project
+
+```bash
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
 
 ## Run
 
-TBD
+The `build` directory now contains the compile executable `kilosim_demo`.
+
+If you change your code, just re-enter the build directory and type `make`. Only
+the code paths that have changed are recompiled.
