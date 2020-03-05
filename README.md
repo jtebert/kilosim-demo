@@ -17,6 +17,8 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
 
+For debugging, use the ``-DCMAKE_BUILD_TYPE=Debug` flag instead.
+
 ## Run
 
 The `build` directory now contains the compile executable `kilosim_demo`.
