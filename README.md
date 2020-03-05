@@ -17,7 +17,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
 
-For debugging, use the ``-DCMAKE_BUILD_TYPE=Debug` flag instead.
+For debugging, use the `-DCMAKE_BUILD_TYPE=Debug` flag instead.
 
 ## Run
 
