@@ -1,4 +1,4 @@
-# Compile your code with:
+# Compile your code with: (see README for additional information)
 # mkdir build
 # cd build
 # cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -12,7 +12,7 @@ project(kilosim_demo LANGUAGES CXX C)
 add_subdirectory(submodules/kilosim)
 
 # Directory containing header files
-include_directories(src)
+include_directories(api)
 
 # Be sure to list all source files
 add_executable(kilosim_demo
