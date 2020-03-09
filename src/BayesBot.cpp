@@ -7,7 +7,9 @@
  */
 
 #include <kilosim/Kilobot.h>
+extern "C" {
 #include "incbeta.h"
+}
 
 // Pseudo-booleans for convenience
 #define FALSE 0
